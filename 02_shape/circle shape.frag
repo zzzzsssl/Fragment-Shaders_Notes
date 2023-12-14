@@ -5,7 +5,7 @@ precision mediump float;
 uniform vec2 u_resolution;
 
 float circleshape(vec2 position, float radius){   //圆形函数
-    return step(radius, length(position - vec2(0.5))); //position - vec2(0.5) 是为了让圆形中心在画面正中央
+    return step(radius, length(position - vec2(0.5))); //当坐标减去 vec2(0.5) 是为了让圆形中心在画面正中央
 }                                                 //length() 内置函数
 
 
